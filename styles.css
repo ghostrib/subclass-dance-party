@@ -18,10 +18,25 @@ body, a:link, a:visited, a:active{
   background-color: #555;
 }
 .title{
-  background-color: #777;
+  background-color: rgb(119, 118, 118);
 }
+
 .dancer{
-  border:10px solid red;
+  /*border:10px solid red;*/
   border-radius:10px;
   position:absolute;
+}
+
+
+/*
+Style Skull-Dancer
+*/
+.skull-dancer {
+  background: url('https://www.clipartmax.com/png/middle/232-2326475_human-skull-symbolism-clip-art-skull-logo-vector-png.png');
+  
+}
+
+img {
+  height: 100px;
+  width: 100px;
 }
