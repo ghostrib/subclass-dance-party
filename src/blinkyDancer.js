@@ -18,7 +18,7 @@ var BlinkyDancer = function() {
   BlinkyDancer.prototype = Object.create(Dancer.prototype);
   BlinkyDancer.prototype.constructor = BlinkyDancer;
 
-  var oldStep = BlinkyDancer.step;
+  var oldStep = BlinkyDancer.prototype.step;
 
   BlinkyDancer.prototype.step = function(timeBetweenSteps) {
     // call the old version of step at the beginning of any call to this new version of step

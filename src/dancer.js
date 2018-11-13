@@ -21,7 +21,7 @@ Dancer.prototype.step = function(timeBetweenSteps) {
   console.log('help!!!')
   //console.log(JSON.stringify(this.step));
   //console.log(JSON.stringify(timeBetweenSteps));
-  setTimeout(this.step.bind(this), timeBetweenSteps);
+  setTimeout(this.bind(this), timeBetweenSteps);
 };
 
 Dancer.prototype.setPosition = function(top, left) {
