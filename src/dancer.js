@@ -1,17 +1,19 @@
-// Creates and returns a new dancer object that can step
-var makeDancer = function(top, left, timeBetweenSteps) {
-  this.color = 'blue'; 
-  this.top = top
-  //var dancer = {};
-  //var dancer = new Dancer();
-  //dancer.step(timeBetweenSteps);
-  //dancer.setPosition(top, left);
-  //return dancer;
-}
+// // Creates and returns a new dancer object that can step
+// var makeDancer = function(top, left, timeBetweenSteps) {
+//   this.color = 'blue'; 
+//   this.top = top
+//   //var dancer = {};
+//   //var dancer = new Dancer();
+//   //dancer.step(timeBetweenSteps);
+//   //dancer.setPosition(top, left);
+//   //return dancer;
+// }
 
-var Dancer = function() {
+var Dancer = function(top, left, timeBetweenSteps) {
   // use jQuery to create an HTML <span> tag
   this.$node = $('<span class="dancer"></span>');
+  this.step(timeBetweenSteps);
+  this.setPosition(top, left);
 }
 
 

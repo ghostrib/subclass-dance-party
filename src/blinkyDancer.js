@@ -1,12 +1,15 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  var blinkyDancer = new BlinkyDancer();
-  blinkyDancer.step(timeBetweenSteps);
-  blinkyDancer.setPosition(top, left);
-  return blinkyDancer;
-}
+// var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
+//   var blinkyDancer = new BlinkyDancer();
+//   return blinkyDancer;
+// }
 
-var BlinkyDancer = function() {
-  Dancer.call(this);
+var BlinkyDancer = function(top,left,timeBetweenSteps) {
+  this.top = top;
+  this.left = left;
+  this.timeBetweenSteps = timeBetweenSteps;
+  Dancer.call(this,top,left,timeBetweenSteps);
+  this.step(timeBetweenSteps);
+  this.setPosition(top, left);
 }
 
   //var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
