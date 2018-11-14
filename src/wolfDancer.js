@@ -1,16 +1,16 @@
-var WolfDancer = function(top, left, timeBetweenSteps) {
+var ZombieDancer = function(top, left, timeBetweenSteps) {
     Dancer.call(this, top, left, timeBetweenSteps);
-    this.$node.addClass('wolf-dancer').append('<img src="https://www.clipartmax.com/png/small/34-349185_zombie-clipart-werewolf-werewolf-clipart.png">');
+    this.$node.addClass('zombie-dancer').append('<img src="http://pngimg.com/uploads/zombie/zombie_PNG22.png">');
 }
 
-WolfDancer.prototype = Object.create(Dancer.prototype);
-WolfDancer.prototype.constructor = WolfDancer;
+ZombieDancer.prototype = Object.create(Dancer.prototype);
+ZombieDancer.prototype.constructor = ZombieDancer;
 
-WolfDancer.prototype.step = function(timeBetweenSteps) {
+ZombieDancer.prototype.step = function(timeBetweenSteps) {
     Dancer.prototype.step.call(this, timeBetweenSteps);
     //$('span').append('<img src="...."')
     //console.log($(this))
     //console.log(this.$node)
-    $('.wolf-dancer').toggle( "puff", { times: 1 }, "slow" )
+    $('.zombie-dancer').toggle( "puff", { times: 1 }, "slow" )
     //this.$node.effect('shake');   
 };

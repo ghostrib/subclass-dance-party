@@ -1,6 +1,6 @@
 var SkullDancer = function(top, left, timeBetweenSteps) {
     Dancer.call(this, top, left, timeBetweenSteps);
-    this.$node.addClass('skull-dancer').append('<img src="https://www.clipartmax.com/png/middle/232-2326475_human-skull-symbolism-clip-art-skull-logo-vector-png.png">');
+    this.$node.addClass('skull-dancer').append('<img src="http://pluspng.com/img-png/horror-png-death-horror-monster-halloween-scary-fear-dark-506.png">');
 }
 
 SkullDancer.prototype = Object.create(Dancer.prototype);
